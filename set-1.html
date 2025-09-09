@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>The Night Sky</title>
+        <link rel="icon" type="image/png" href="./assets/Images/movie-ranking-favicon.png" />
+        <link rel="stylesheet" href="./set-1.css" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <!-- Tailwind CSS CDN -->
+        <link
+        href="https://cdn.jsdelivr.net/npm/daisyui@5"
+        rel="stylesheet"
+        type="text/css"
+        />
+        <!-- DaisyUI CDN -->
+        <link
+        href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css"
+        rel="stylesheet"
+        type="text/css"
+        />
+        <!-- DaisyUI Themes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet"
+        />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header>
+            <h1 class="text-center font-bold text-2xl bg-[#205781] text-[#98D2C0]">The Whispering Night Sky</h1>
+        </header>
+        <main>
+            <!--article appearance section-->
+            <section>
+                <div class="appearance-settings flex justify-center gap-20 p-4 bg-gray-100">
+                    <select class="font-size-menu" name="font-size-settings" id="font-size-settings">
+                        <option value="Default" selected>Font Size</option>
+                        <option value="20px">20px</option>
+                        <option value="24px">24px</option>
+                        <option value="28px">28px</option>
+                        <option value="32px">32px</option>
+                    </select>
+
+                    <select class="font-color-menu font-size-menu" name="font-color-settings" id="font-color-settings">
+                        <option value="Default" selected>Font Color</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="purple">Purple</option>
+                        
+                    </select>
+
+                    <select class="font-family-menu font-size-menu" name="font-family-settings" id="font-family-settings">
+                        <option value="Default" selected>Font Style</option>
+                        <option value="Jost, sans-serif">Jost</option>
+                        <option value="Roboto, sans-serif">Roboto</option>
+                        <option value="Open Sans, sans-serif">Open Sans</option>
+                        <option value="Lato, sans-serif">Lato</option>
+                    </select>
+                </div>
+            </section>
+            <!--article section-->
+            <section class="article-section">
+                
+                <p id="para1">
+                    In the quiet village of Nyakato, nestled between rolling hills and endless savannah, a boy named Kato spent his nights staring at the stars. His grandfather, once a local teacher, had passed down tales of constellations that guided ancient travelers and stories of gods who lived among the stars. But Kato wasn’t content with myths—he wanted to know what the stars were really saying.
+                </p>
+                                  
+                                
+                <p>
+                    One evening, while fiddling with a homemade telescope crafted from old lenses and copper piping, Kato noticed something strange. A flickering pattern near the Orion Belt—three stars pulsing in a rhythm that didn’t match any known celestial behavior. He recorded the sequence, translating it into binary, and to his astonishment, it resembled a repeating signal. Could it be a message? Or just a cosmic coincidence?
+                </p>
+                <p>
+                    Driven by curiosity, Kato shared his findings with a university astronomer visiting the region for a meteor shower. The scientist was skeptical at first, but after reviewing the data, she admitted it was unlike anything she’d seen. Together, they submitted the signal to an international observatory. Weeks later, the world buzzed with speculation: a possible interstellar transmission, not from aliens, but from a neutron star spinning at just the right frequency to mimic a coded pulse.
+                </p>
+                <p>
+                    Though the mystery was eventually explained by physics, Kato’s discovery sparked a wave of interest in astronomy across Uganda. Schools began hosting stargazing nights, and Kato was invited to speak about the beauty of curiosity. He hadn’t found aliens—but he had found something just as powerful: the ability to inspire others to look up and wonder.
+                </p>
+                <button class="learn-more-button" id="clickButton">Learn More</button>
+            </section>              
+            
+            <!--comments section-->
+            <section class="comments-section">
+                <h2>Comments</h2>
+                <div class="comment">
+                    <p><strong>Amina:</strong> This story is so inspiring! Kato's curiosity reminds me to always look up and wonder about the universe.</p>
+                </div>
+                <div class="comment">
+                    <p><strong>John:</strong> I love how Kato's discovery brought the community together. Science can be so exciting!</p>
+                </div>
+                <div class="comment">
+                    <p><strong>Sophia:</strong> The blend of myth and science in this story is beautiful. It shows how our understanding of the world evolves.</p>
+                </div>
+                <form class="comment-form">
+                    <textarea id="commentInput" maxlength="200" placeholder="Add a comment..." required></textarea>
+                    <p id="feedback"><span id="charCount">0</span>/200</p>
+                    <button type="submit" class="comment-button">Post Comment</button>
+                </form>
+            </section>
+
+            <!--subscribe section-->
+            <section class="subscribe-section">
+                <h2>Subscribe for Updates</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required />
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="password">Password:</label>
+                    <div class="password-toggle flex gap-2 items-center">
+                        <input type="password" id="passwordInput" name="password" required />
+                        <label for="toggle">
+                            <input type="checkbox" id="toggle" name="toggle" />
+                            <span class="text-sm">Show Password</span>
+                        </label>
+                    </div>
+                   
+                    <button type="submit">Subscribe</button>
+                </form>
+
+                
+            </section>
+
+        </main>
+        <footer>
+            <p>&copy; 2025 The Night Sky. All rights reserved.</p>
+        </footer>
+        <script src="./set-1.js"></script>
+    </body>
+</html>
