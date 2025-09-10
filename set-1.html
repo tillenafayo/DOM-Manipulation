@@ -38,7 +38,7 @@
         <main>
             <!--article appearance section-->
             <section>
-                <div class="appearance-settings flex justify-center gap-20 p-4 bg-gray-100">
+                <div class="appearance-settings flex justify-center gap-20 p-4">
                     <select class="font-size-menu" name="font-size-settings" id="font-size-settings">
                         <option value="Default" selected>Font Size</option>
                         <option value="20px">20px</option>
@@ -63,6 +63,9 @@
                         <option value="Open Sans, sans-serif">Open Sans</option>
                         <option value="Lato, sans-serif">Lato</option>
                     </select>
+
+                    <!-- Dark mode toggle -->
+                    <button id="darkModeToggle">Dark Mode / Light Mode</button>
                 </div>
             </section>
             <!--article section-->
@@ -85,22 +88,14 @@
                 <button class="learn-more-button" id="clickButton">Learn More</button>
             </section>              
             
-            <!--comments section-->
+            <!--summary section-->
             <section class="comments-section">
-                <h2>Comments</h2>
-                <div class="comment">
-                    <p><strong>Amina:</strong> This story is so inspiring! Kato's curiosity reminds me to always look up and wonder about the universe.</p>
-                </div>
-                <div class="comment">
-                    <p><strong>John:</strong> I love how Kato's discovery brought the community together. Science can be so exciting!</p>
-                </div>
-                <div class="comment">
-                    <p><strong>Sophia:</strong> The blend of myth and science in this story is beautiful. It shows how our understanding of the world evolves.</p>
-                </div>
+                <h2>Write a brief summary of the story</h2>
+                
                 <form class="comment-form">
-                    <textarea id="commentInput" maxlength="200" placeholder="Add a comment..." required></textarea>
+                    <textarea id="commentInput" maxlength="200" placeholder="Type your summary..." required></textarea>
                     <p id="feedback"><span id="charCount">0</span>/200</p>
-                    <button type="submit" class="comment-button">Post Comment</button>
+                    
                 </form>
             </section>
 
@@ -116,6 +111,7 @@
                     <label for="password">Password:</label>
                     <div class="password-toggle flex gap-2 items-center">
                         <input type="password" id="passwordInput" name="password" required />
+                        
                         <label for="toggle">
                             <input type="checkbox" id="toggle" name="toggle" />
                             <span class="text-sm">Show Password</span>
@@ -128,10 +124,82 @@
                 
             </section>
 
+            <!--List section-->
+            <section class="list-section">
+                <h1 class="text-center text-xl">A list of books to read</h1>
+                <div class="list-container">
+                    <input type="text" id="itemInput" placeholder="Book title">
+                    <button id="addButton">Add</button>
+                    <ul id="itemList"></ul>
+                </div>
+            </section>
+
+            <!--Table section-->
+            <section class="table-section">
+                <h1>A table of members and their favorite books</h1>
+                <input type="text" id="searchInput" placeholder="Search by name or book...">
+                <div class="overflow-x-auto border border-base-content/5 bg-base-100">
+                    <table class="table" id="membersTable">
+                        <!-- head -->
+                        <thead>
+                        <tr>
+                            <th></th>
+                            <th>Name</th>
+                            <th>Favorite Book</th>
+                            
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <!-- row 1 -->
+                            <tr>
+                                <th>1</th>
+                                <td>Atwanzire REUEL</td>
+                                <td>The Great Gatsby</td>
+                                
+                            </tr>
+                            <!-- row 2 -->
+                            <tr>
+                                <th>2</th>
+                                <td>Ssenabulya Eric</td>
+                                <td>Round The World In 80 Days</td>
+                                
+                            </tr>
+                            <!-- row 3 -->
+                            <tr>
+                                <th>3</th>
+                                <td>Roland Sankara</td>
+                                <td>Voyager</td>
+                                
+                            </tr>
+
+                            <!-- row 4 -->
+                            <tr>
+                                <th>4</th>
+                                <td>Tillen Afayo</td>
+                                <td>Bloodline</td>
+                                
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!--Carousel section-->
+            <section class="carousel-section">
+                <h1 class="text-center text-xl">Image Carousel</h1>
+                <div class="carousel-container">
+                    <img id="carouselImage" src="./assets/Images/kungfu-panda.jpg" alt="Carousel Image">
+                    <div class="carousel-buttons">
+                        <button id="prevBtn">Previous</button>
+                        <button id="nextBtn">Next</button>
+                    </div>
+                </div>
+            </section>
+
         </main>
         <footer>
             <p>&copy; 2025 The Night Sky. All rights reserved.</p>
         </footer>
-        <script src="./set-1.js"></script>
+        <script src="./DOM Practice.js"></script>
     </body>
 </html>
